@@ -15,22 +15,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@trpc/client": "11.0.0-rc.608",
-    "@trpc/server": "11.0.0-rc.608",
-    "cors": "2.8.5",
     "cross-env": "7.0.3",
     "debug": "4.3.4",
     "express": "4.21.1",
     "tsc-alias": "1.6.11",
-    "typescript": "5.6.3",
-    "ws": "8.18.0",
     "zod": "3.23.8"
   },
   "devDependencies": {
-    "@types/cors": "2.8.17",
     "@types/express": "5.0.0",
     "@types/node": "22.9.0",
-    "@types/ws": "^8.5.13",
     "@typescript-eslint/eslint-plugin": "5.28.0",
     "@typescript-eslint/parser": "5.28.0",
     "eslint": "7.32.0",
@@ -41,7 +34,7 @@
     "eslint-plugin-prettier": "4.0.0",
     "git-last-commit": "1.0.1",
     "nodemon": "2.0.16",
-    "prettier": "2.7.1"
+    "typescript": "5.6.3"
   },
   "nodemonConfig": {
     "env": {
