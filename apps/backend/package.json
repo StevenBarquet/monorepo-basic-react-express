@@ -4,8 +4,8 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "predev": "cross-env NODE_ENV=development",
-    "prebuild": "cross-env NODE_ENV=production node ./config/git-hooks/scripts/pre-run.js",
+    "predev": "rm -rf dist && cross-env NODE_ENV=development",
+    "prebuild": "rm -rf dist && cross-env NODE_ENV=production",
     "dev": "nodemon -e ts --ignore dist/  --ignore src/entities/health/config/ --watch src/ --exec 'tsc && tsc-alias && node ./dist/backend/src/index.js'",
     "prod": "npm run build && cross-env NODE_ENV=production DEBUG=app:prod node ./dist/backend/src/index.js",
     "build": "tsc && tsc-alias",

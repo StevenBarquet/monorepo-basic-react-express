@@ -11,7 +11,9 @@
     "postinstall": "node scripts/preinstall/index.mjs",
     "front": "yarn workspace frontend dev",
     "front-prod": "yarn workspace frontend prod",
-    "back": "yarn workspace backend dev"
+    "back": "yarn workspace backend dev",
+    "back-build": "yarn workspace backend build",
+    "back-prod": "yarn workspace backend prod"
   },
   "devDependencies": {
     "git-last-commit": "1.0.1",

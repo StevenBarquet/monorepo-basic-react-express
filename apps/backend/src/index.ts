@@ -21,6 +21,6 @@ function getProducts(_: express.Request, res: express.Response) {
 }
 
 app.listen(port, () => {
-    logger.prod(`Servidor corriendo en http://localhost:${port}`);
+    logger.prod(`Servidor: http://localhost:${port}`);
     console.log(TYPED_ENVS)
 });
