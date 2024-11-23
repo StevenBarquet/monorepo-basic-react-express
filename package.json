@@ -1,5 +1,5 @@
 {
-  "name": "monorepo-trcp",
+  "name": "monorepo-vivir-tekk",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -13,6 +13,7 @@
     "back": "yarn workspace backend dev"
   },
   "devDependencies": {
+    "git-last-commit": "1.0.1",
     "plop": "4.0.1"
   }
 }

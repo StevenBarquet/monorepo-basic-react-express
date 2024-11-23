@@ -23,3 +23,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Custom
+apps/backend/src/config/envs/secrets.ts
+apps/shared/appVersion.ts

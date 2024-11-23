@@ -1,4 +1,6 @@
 import express from 'express';
+import { logger } from './config/logger';
+import { TYPED_ENVS } from './config/typed-envs';
 
 const app = express();
 const port = 4000;
@@ -19,5 +21,6 @@ function getProducts(_: express.Request, res: express.Response) {
 }
 
 app.listen(port, () => {
-    console.log(`Servidor corriendo en http://localhost:${port}`);
+    logger.prod(`Servidor corriendo en http://localhost:${port}`);
+    console.log(TYPED_ENVS)
 });
