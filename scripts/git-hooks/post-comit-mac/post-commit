@@ -19,7 +19,7 @@ fi
 # otherwise, still run the hook
 
 
-node ./scripts/post-commit &&
+node ./scripts/post-commit/index.mjs &&
 
 git add . &&
 

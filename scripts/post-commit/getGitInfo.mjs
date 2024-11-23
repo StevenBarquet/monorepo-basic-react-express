@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import git from 'git-last-commit';
-import { getDirname } from '../utils/getDirname.js';
+import { getDirname } from '../utils/getDirname.mjs';
 
 const { __dirname } = getDirname();
 
@@ -11,7 +11,7 @@ export async function getGitInfo() {
     git.getLastCommit(function (er, commit) {
       const fullFile = path.join(
         __dirname,
-        '../../src/shared/config/commitInfo.ts',
+        '../../apps/shared/appVersion.ts',
       );
       // read commit object properties
       const commitID = commit?.hash;

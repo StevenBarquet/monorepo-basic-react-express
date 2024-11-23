@@ -2,7 +2,7 @@
 import fs from 'fs';
 import path from 'path';
 import os from 'os';
-import { getDirname } from '../utils/getDirname.js';
+import { getDirname } from '../utils/getDirname.mjs';
 
 const { __dirname } = getDirname();
 

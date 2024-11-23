@@ -1,19 +1,16 @@
 // @ts-check
 import fs  from 'fs';
 import path  from 'path';
-import { getDirname } from '../utils/getDirname.js';
+import { getDirname } from '../utils/getDirname.mjs';
 
 const { __dirname } = getDirname();
 
-export async function generateSecrets() {
-  // Define la ruta donde se creará el archivo secrets.js
+export async function generateSecrets(pathOfSecrets) {
+  // Define la ruta donde se creará el archivo secrets.ts
   const secretsPath = path.join(
     __dirname,
     '../../',
-    'src',
-    'env',
-    'profiles',
-    'secrets.js'
+    pathOfSecrets
   );
 
   // Verifica si el archivo ya existe
@@ -27,21 +24,21 @@ class Environments {
   SUPER_SECRET_EXAMPLE= '1234';
 }
 
-/**@type {{[s: string]: string}} */
+/**@type {{[s: string]: string}} para permitir acceder a cualquier variable teorica */
 // @ts-ignore
 export const secrets = new Environments();
 `;
 
       fs.writeFile(secretsPath, secretsContent, (err) => {
         if (err) {
-          console.error('Error al crear el archivo secrets.js:', err);
+          console.error('Error al crear el archivo secrets.ts:', err);
         } else {
-          console.log('Archivo secrets.js creado exitosamente.');
+          console.log('Archivo secrets.ts creado exitosamente.');
         }
       });
     } else {
       // Si el archivo ya existe, muestra un mensaje y no hace nada
-      console.log('El archivo secrets.js ya existe.');
+      console.log('El archivo secrets.ts ya existe.');
     }
   });
 }

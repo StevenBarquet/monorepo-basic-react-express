@@ -1,6 +1,6 @@
 // @ts-check
 
-import { getGitInfo } from "./getGitInfo.js";
+import { getGitInfo } from "./getGitInfo.mjs";
 
 /** */
 async function main() {
