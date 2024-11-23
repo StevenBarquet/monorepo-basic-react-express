@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   resolve: {
     alias: {
-      '@node_modules': './node_modules',
+      '@node_modules': '../../node_modules',
       '@src': './src',
     },
   },

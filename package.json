@@ -9,6 +9,10 @@
   ],
   "scripts": {
     "front": "yarn workspace frontend dev",
+    "front-prod": "yarn workspace frontend prod",
     "back": "yarn workspace backend dev"
+  },
+  "devDependencies": {
+    "plop": "4.0.1"
   }
 }
