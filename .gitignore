@@ -26,4 +26,3 @@ dist-ssr
 
 # Custom
 apps/backend/src/config/envs/secrets.ts
-apps/shared/appVersion.ts
