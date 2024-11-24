@@ -8,12 +8,14 @@ import { ReactElement } from 'react';
  */
 export function HelloWorld(): ReactElement {
   // -----------------------CONSTS, HOOKS, STATES
+  console.log(import.meta.env);
+  
   // -----------------------RENDER
   return (
     <>
       <p>
         Goodbye &nbsp;
-        <span>World2</span>
+        <span>{import.meta.env.VITE___APP_ENV__}</span>
       </p>
     </>
   );

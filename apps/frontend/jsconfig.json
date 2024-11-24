@@ -3,8 +3,9 @@
     "module": "ES2020",
     "jsx": "react-jsx",
     "paths": {
-      "src/*": ["./src/*"]
+      "src/*": ["./src/*"],
+      "shared/*": ["../shared/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "../shared/"]
 }

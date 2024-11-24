@@ -23,9 +23,10 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "src/*": ["src/*"]
+      "src/*": ["src/*"],
+      "shared/*": ["../shared/*"]
     }
   },
-  "include": ["vite.config.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["vite.config.ts", "envs/**/*.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules", "scripts"]
 }

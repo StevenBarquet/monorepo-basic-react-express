@@ -6,10 +6,12 @@ import path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
+  
   resolve: {
     alias: {
       '@node_modules': '../../node_modules',
       '@src': './src',
+      "@shared": "../shared"
     },
   },
   css: {
